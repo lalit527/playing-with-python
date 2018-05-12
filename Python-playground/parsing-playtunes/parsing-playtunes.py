@@ -74,8 +74,8 @@ def plotStats(file):
       durations.append(track['Total Time'])
     except:
       pass
-  if rating == [] or durations == []:
-    print("No valid Album Rating/Total Time data in %s." % fileName)
+  if ratings == [] or durations == []:
+    print("No valid Album Rating/Total Time data in %s." % file)
     return
   x = np.array(durations, np.int32)
   x = x/60000.0
